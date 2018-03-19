@@ -5,12 +5,9 @@ export default class GradientApp extends React.Component {
   constructor(props) {
     super(props);
   }
-
   render() {
     return (
-      <main>
-        <ColorForm />
-      </main>
+      <ColorForm />
     );
   }
 }
