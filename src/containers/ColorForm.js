@@ -17,6 +17,7 @@ export default class ColorForm extends React.Component {
 
     if(fromColor[0]!=='#' || fromColor.length !== 7){
       alert("Введите первый цвет в формате #rrggbb");
+      return;
     } else {
       for(let i = 1; i < fromColor.length; i++) {
         if(fromColor.charCodeAt(i) < 48 ||
@@ -32,6 +33,7 @@ export default class ColorForm extends React.Component {
 
     if(toColor[0]!=='#' || toColor.length !== 7){
       alert("Введите второй цвет в формате #rrggbb");
+      return;
     } else {
       for(let i = 1; i < toColor.length; i++) {
         if(toColor.charCodeAt(i) < 48 ||
@@ -44,7 +46,6 @@ export default class ColorForm extends React.Component {
         }
       }
     }
-
     const gradient = document.querySelector('form');
       gradient.style.backgroundImage = `linear-gradient(to bottom, ${fromColor}, ${toColor})`;
   };
