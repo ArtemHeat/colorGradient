@@ -1,6 +1,6 @@
 import React from 'react';
-import GradientApp from './containers/GradientApp';
+import ColorForm from './containers/ColorForm';
 
 export default function App() {
-  return <GradientApp />;
+  return <ColorForm />;
 }
